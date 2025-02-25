@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@media print {
+body {-webkit-margin-top-collapse: exact;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: #7B2CBF;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+body{
+    background: linear-gradient(90deg,#10002B,#C77DFF) fixed;
+    padding:50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card{
+    width: 450px;
+    height: 500px;
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+}
+.card > *{
+    padding: 10px;
+}
+.card .card-image{
+    height: 250px;
+    width: 250px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card .card-title{
+    padding: 20px 10px;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: #f7c20c;
+    text-shadow: 1px 0px 2px #262654;
+}
+.card:nth-child(1) .card-image{
+    background-image: url(images/star.png);
+}
+.card:nth-child(2) .card-image{
+    background-image: url(images/history.png); 
+}
+.card:nth-child(3) .card-image{
+    background-image: url(images/shop.png);
+}
+.card:nth-child(4) .card-image{
+    background-image: url(images/person.png);
+}
+.card:nth-child(5) .card-image{
+    background-image: url(images/flyby.png);
+}
+.card:nth-child(6) .card-image{
+    background-image: url(images/illusion.png);
+}
+.card:nth-child(7) .card-image{
+    background-image: url(images/ruckus.png);
+}
+.card:nth-child(8) .card-image{
+    background-image: url(images/arsenal.jpg);
+}
+.card:hover{
+    background: #9D4EDD;
+    color: #fff;
+    box-shadow: 0px 0px 11px 5px #ffffff;
+
+}
+
+.card .card-text{
+    line-height: 20px;
+    font-size: 400;
+}
